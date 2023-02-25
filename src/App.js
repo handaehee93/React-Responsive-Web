@@ -1,10 +1,11 @@
-import './App.css'
+import './reset.css'
 import './App.css';
+import Header from './componets/Header';
 
 function App() {
   return (
     <div className="App">
-      Responsive
+      <Header />
     </div>
   );
 }

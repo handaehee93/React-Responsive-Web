@@ -18,3 +18,10 @@ a {
 	text-decoration:none;
 	color:rgb(73, 73, 73)
 }
+/* inner라는 클래스는 각 컴포넌트에서 공통적으로 사용할 예정이므로 이렇게 reset css에 넣어 주었다. */
+.inner {
+  position:relative;
+  max-width: 1200px;
+  margin:auto;
+
+}
