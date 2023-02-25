@@ -1,4 +1,4 @@
-/* css파일을 작성하기 전 기존에 이미 들어가 있는 속성값들을 초기화 하고, 반복되는 것들의 기본 값들을 설정하는 css 파일 */
+/* css파일을 작성하기 전 기존에 이미 들어가 있는 속성값들을 초기화 하고, 폰트 지정과 같은 반복되는 것들의 기본 값들을 설정하는 css 파일 */
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 *{
 	margin:0;
