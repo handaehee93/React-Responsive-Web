@@ -1,6 +1,7 @@
 header {
   height: 10rem;
 }
+/* %를 사용할 때는 부모 요소에 너비나 높이가 지정이 되어 있는지 확인 부터 하자. */
 header .inner {
   display: flex;
   justify-content: space-between;
@@ -25,4 +26,61 @@ header .nav li {
 header .nav li a {
   font-size: 2rem;
   font-weight: 20rem;
+}
+/* section1의 자식 요소인 content라는 div하나의 위치를 바꿀 것이므로 부모요소인 section1에 position relative를 주었다. */
+.section1 {
+  height: 64.4rem;
+  background-color: #d3d3d3;
+  position: relative;
+}
+
+.section1 .content {
+  position: absolute;
+  top: 0;
+/* calc를 사용을 할 때는 사이사이를 띄어 써야 한다. */
+  left: calc(50% + 1rem);
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  border: 1px solid;
+}
+
+.section1 .content h2 {
+  font-size: 6.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.section1 .content p {
+  font-size: 1.9rem;
+  font-weight: 300;
+  margin: 1.6rem 0;
+}
+/* a태그는 인라인 요소이기 때문에 너비 값을 주기 위해 display를 inline block으로 바꿔 주었다.여기에 position relative를 준 이유는 아래에서 화살표 모양을 추가할 거고 position속성으로 위치를 지정할 것이기 때문에 a태그를 부모요소로 지정하기 위해 넣어 준 것 */
+.section1 .content a {
+  position: relative;
+  display: inline-block;
+  padding: 0 2rem;
+  background-color: #eee;
+  width: 15rem;
+  font-size: 1.6rem;
+  line-height: 3;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: 500;
+  border-radius: 3rem;
+}
+/* border를 아래와 같이 입력하면 삼각형 모양을 만들 수 있고 position속성을 통해 적당한 위치에 위치시킨 다음에 transfrom을 사용해 가운데에 위치하게 해주었다. */
+.section1 .content a:after {
+  position: absolute;
+  display: block;
+  content: '';
+  border-top: 10px solid transparent;
+  border-left: 10px solid black;
+  border-bottom: 10px solid transparent;
+  top: 50%;
+  right: 15px;
+  transform:translateY(-50%);
 }
