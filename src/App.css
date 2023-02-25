@@ -19,7 +19,7 @@ a {
 	color:rgb(73, 73, 73)
 }
 
-.header {
+header {
   height: 10rem;
   position:relative;
   max-width: 1200px;
