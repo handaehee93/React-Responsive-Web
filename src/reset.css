@@ -1,0 +1,20 @@
+/* css파일을 작성하기 전 기존에 이미 들어가 있는 속성값들을 초기화 하고, 반복되는 것들의 기본 값들을 설정하는 css 파일 */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
+
+/* 반응형 웹을 만들때 rem을 사용하는데 기본적인 브라우저의 font-size는 16px이기 때문에 예를 드어 1.5rem했을 때 정확히 몇 px인지 계산이 어렵다. 따라서 아래와 같이 font-size를 62.5%로 하면 기본 font-size가 10px이 되어 rem계산이 쉬워 진다. */
+html,body {
+	font-size:62.5%;
+}
+
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration:none;
+	color:rgb(73, 73, 73)
+}
