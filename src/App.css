@@ -217,3 +217,107 @@ header {
   right: 15px;
   transform:translateY(-50%);
 }
+
+.section4 {
+  padding: 150px ;
+}
+
+.section4 .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section4 .inner .text_wrap {
+
+}
+
+.section4 .inner .text_wrap h2 {
+  font-size: 5rem;
+
+}
+
+.section4 .inner .text_wrap p {
+  font-size: 2.3rem;
+  font-weight: 200;
+  margin: 40px 0;
+}
+
+.section4 .inner .text_wrap a {
+  position: relative;
+  display: inline-block;
+  padding: 0 2rem;
+  background-color: #eee;
+  width: 15rem;
+  font-size: 1.6rem;
+  line-height: 3;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: 500;
+  border-radius: 3rem;
+}
+
+.section4 .inner .text_wrap a::after {
+  position: absolute;
+  display: block;
+  content: '';
+  border-top: 10px solid transparent;
+  border-left: 10px solid black;
+  border-bottom: 10px solid transparent;
+  top: 50%;
+  right: 15px;
+  transform:translateY(-50%);
+}
+
+.section4 .inner .images {
+  width: 690px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.section4 .inner .images li {
+  width: calc(50% - 20px);
+  height: 511px;
+  padding: 50px 25px 25px;
+  background-color: #818181;
+  border-radius: 30px;
+}
+
+.section4 .inner .images li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section4 .inner .images li a h4 {
+  font-size: 4rem;
+}
+
+.section4 .inner .images li a p {
+  font-size: 1.7rem;
+  color:white;
+  text-align: center;
+}
+
+.section4 .inner .images li .image {
+  width: 100%;
+  height: 200px;
+  background-color: #786e6e;
+}
+
+.section4 .inner .images li:nth-child(1) {
+  margin-top: 150px;
+}
+/* 첫번째 li가 내려온 만큼 4번째 요소가 똑같이 올라오게 하려고 -값을 주었다. */
+.section4 .inner .images li:nth-child(4) {
+  margin-top: -150px;
+}
+
+.section4 .inner .images li:nth-child(1),
+.section4 .inner .images li:nth-child(2) {
+  margin-bottom: 50px;
+}
