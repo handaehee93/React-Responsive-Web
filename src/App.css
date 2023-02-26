@@ -68,7 +68,7 @@ header {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  border: 1px solid;
+
 }
 
 .section1 .content h2 {
@@ -154,4 +154,66 @@ header {
   font-weight: 400;
   color: #818181;
   margin-top: 20px;
+}
+
+.section3 {
+  position: relative;
+  padding: 10rem 0;
+  max-width: 1200px;
+  margin:auto;
+}
+
+.section3 .inner {
+  display: flex;
+  align-items: center;
+}
+  
+
+
+.section3 .inner .image_wrap {
+  width: 600px;
+  height: 480px;
+  background-color: #d3d3d3;
+  border-radius: 30px;
+  margin-right: 140px;
+}
+
+.section3 .inner .text_wrap {
+  width: 600px;
+}
+
+.section3 .inner .text_wrap h2 {
+  font-size: 5rem;
+}
+
+.section3 .inner .text_wrap p {
+  font-size: 2.3rem;
+  font-weight: 200;
+  margin: 40px 0;
+}
+
+.section3 .inner a {
+  position: relative;
+  display: inline-block;
+  padding: 0 2rem;
+  background-color: #eee;
+  width: 15rem;
+  font-size: 1.6rem;
+  line-height: 3;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: 500;
+  border-radius: 3rem;
+}
+
+.section3 .inner a:after {
+  position: absolute;
+  display: block;
+  content: '';
+  border-top: 10px solid transparent;
+  border-left: 10px solid black;
+  border-bottom: 10px solid transparent;
+  top: 50%;
+  right: 15px;
+  transform:translateY(-50%);
 }
